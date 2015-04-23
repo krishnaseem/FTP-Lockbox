@@ -1,0 +1,50 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.lockbox.db;
+
+/**
+ *
+ * @author seemanapallik
+ */
+public enum ParamEnum {
+    
+    
+    
+    FTPLOCALDIR("FileXFRI.LOCKBOX_IN.FTPLOCALDIR"),
+    PROTOCOL("FileXFRI.LOCKBOX_IN.PROTOCOL"),
+    FTPHOST("FileXFRI.LOCKBOX_IN.FTPHOST"),
+    FTPPASSWORD("FileXFRI.LOCKBOX_IN.FTPPASSWORD"),
+    FILEPATTERN("FileXFRI.LOCKBOX_IN.FILEPATTERN"),
+    FTPARCH("FileXFRI.LOCKBOX_IN.FTPARCH"),
+    FTPDIR("FileXFRI.LOCKBOX_IN.FTPDIR"),
+    FTPPOSTDELETE("FileXFRI.LOCKBOX_IN.FTPPOSTDELETE"),
+    FTPPOSTARCHIVE("FileXFRI.LOCKBOX_IN.FTPPOSTARCHIVE"),
+    FILEARCHIVEDIR("FileXFRI.LOCKBOX_IN.FILEARCHIVEDIR"),
+    EMAIL_USER("FileXFRI.LOCKBOX_IN.EMAIL_USER"),
+    EMAIL_YN("FileXFRI.LOCKBOX_IN.EMAIL_YN"),
+    ENCRYPT("FileXFRI.LOCKBOX_IN.ENCRYPT"),
+    LOCALARCHIVE("FileXFRI.LOCKBOX_IN.LOCALARCHIVE"),
+    POSTPROCESS("FileXFRI.LOCKBOX_IN.POSTPROCESS"),
+    FILE_PROCESSED_EMAIL_YN("FileXFRI.LOCKBOX_IN.FILE_PROCESSED_EMAIL_YN"),
+    FTPUSER("FileXFRI.LOCKBOX_IN.FTPUSER"),
+    PORT("FileXFRI.LOCKBOX_IN.PORT"),
+    SFTPKEY("FileXFRI.LOCKBOX_IN.SFTPKEY"),
+    INPUT_QUEUE("FileXFRI.LOCKBOX_IN.INPUT_QUEUE"),
+    DUPLICATESALLOWED("FileXFRI.WPNI_AD_IN.DUPLICATESALLOWED"),
+    ASCII_YN("FileXFRI.ALS_MAGAZINE_OUT.ASCII_YN"),
+    ENV("ENV");
+    
+    public String name;
+    public int port =22;
+    
+    ParamEnum(String name){
+        this.name=name;
+    }
+    
+        ParamEnum(int port){
+        this.port=port;
+    }
+}
+
